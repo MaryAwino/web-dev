@@ -1,0 +1,266 @@
+ body{ 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f5ef;
+    color:#262626;
+} 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #173d2a;
+    padding: 20px 10px;
+}
+.logo{
+    color:white;
+    font-size: 25px;
+    font-weight: bold;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    margin: 20px;
+}
+.hero{
+    min-height: 480px;
+    background-image: url("https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px 20px;
+    color: white;
+}
+.hero h1{
+    font-size: 50px;
+}
+.hero p{
+    font-size: 20px;
+    line-height: 1.6;
+}
+.hero button{
+    background-color: #f5b544;
+    color: black;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Local Destinations section */
+.columns {
+    display: flex;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+/* Left-aligned paragraph */
+.column:nth-child(1) p {
+    text-align: left;
+}
+
+/* Centre-aligned paragraph */
+.column:nth-child(2) p {
+    text-align: center;
+}
+
+/* Right-aligned paragraph */
+.column:nth-child(3) p {
+    text-align: right;
+}
+
+/* Column headings */
+.column h2 {
+    color: #173d2a;
+}
+/* Contact Styles 
+.hero-contact {
+    background-color: #173d2a;
+    padding:45px 20px;
+    text-align: center;
+    color: white;
+}
+.hero-contact h1 {
+    font-size: 36px;
+}
+.hero-contact p {
+    font-size: 16px;
+
+}
+.container {
+    display: flex;
+    gap: 40px;
+    padding: 50px 20px;
+}
+.left,.right{
+
+    background-color: #173d2a;
+    padding: 20px;
+    flex: 1;
+
+
+}
+.left img{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+label{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+.right{
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+/* Contact Styles */
+
+.hero-contact {
+    background-color: #173d2a;
+    padding: 45px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-contact h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero-contact p {
+    font-size: 16px;
+}
+
+/* Main contact layout */
+.container {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    align-items: stretch;
+}
+
+/* Left and right cards */
+.left,
+.right {
+    background-color: white;
+    color: #333;
+    padding: 25px;
+    flex: 1;
+    min-width: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+}
+
+/* Left image */
+.left img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Card headings */
+.left h2,
+.right h2 {
+    color: #173d2a;
+    margin-top: 20px;
+}
+
+/* Contact information */
+.left p,
+.right p {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Form labels */
+.right label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #173d2a;
+}
+
+/* Input fields and textarea */
+.right input,
+.right textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.right input:focus,
+.right textarea:focus {
+    outline: none;
+    border-color: #34784a;
+    box-shadow: 0 0 0 2px rgba(52, 120, 74, 0.15);
+}
+
+.right textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit button */
+.right button {
+    width: 100%;
+    background-color: #173d2a;
+    color: white;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.right button:hover {
+    background-color: #285c3b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 25px auto;
+        gap: 20px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .left img {
+        height: 250px;
+    }
+
+    .hero-contact h1 {
+        font-size: 30px;
+    }
+}
